@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "DS-Digital";
+  src: url("./assets/fonts/DS-DIGI.woff2") format("woff2"),
+    url("./assets/fonts/DS-DIGI.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #0b0f10;
+  color: #ff0000;
+  font-family: "DS-Digital", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "DS-Digital", sans-serif;
+}
+i {
+  font-family: "DS-Digital", sans-serif;
+}
+h3 {
+  font-family: "DS-Digital", sans-serif;
+}
+span {
+  font-family: "DS-Digital", sans-serif;
+}
+.Header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h6 {
+  font-style: italic;
+  font-weight: 400;
+  color: #ff4d4d;
+  margin-bottom: 30px;
+}
+
+span,
+label {
+  font-size: 1.2rem;
+  color: #ff4d4d;
+}
+
+input[type="text"] {
+  background-color: #1a1a1a;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  padding: 10px;
+  color: #ff0000;
+  outline: none;
+  width: 250px;
+  text-transform: uppercase;
+  font-family: "DS-Digital", sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+.Timer {
+  font-size: 80px;
+}
+input[type="text"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.new-item-form {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: "DS-Digital", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn-reps {
+  width: 35px;
+  height: 35px;
+  font-size: 1rem;
+  padding: 0;
+  margin: 3px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn-reps:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  background-color: #e60000;
+}
+
+.btn-danger:hover {
+  background-color: #b30000;
+}
+
+.btn-secondary {
+  background-color: #555;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+}
+
+.btn-primary {
+  background-color: #ff4d4d;
+}
+
+.btn-primary:hover {
+  background-color: #ff1a1a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* === EXERCISE LIST ITEMS (UPDATED) === */
+li {
+  background-color: transparent; /* Removed dark box */
+  border: none; /* Removed red border */
+  border-radius: 0; /* No rounded edges */
+  margin: 10px auto;
+  font-family: "DS-Digital", sans-serif;
+  padding: 10px 0;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* Keep label and span styling intact */
+li label {
+  color: #ff4d4d;
+  margin-right: 5px;
+}
+
+li span {
+  color: #ffffff;
+  font-weight: bold;
+}
+li input[type="checkbox"]:checked + label {
+  color: hsl(0, 53%, 22%);
+}
+
+input[type="checkbox"] {
+  transform: scale(1.4);
+  accent-color: #ff0000;
+}
+.m-2 {
+  margin: 8px;
+}
+
+.btn-lg {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+}
+
+.sm {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+#root > div:first-child {
+  background-color: #1a1a1a;
+  border-radius: 25px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 30px #ff0000;
+}
+
+h1:first-child {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #ff0000;
+}
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-family: "DS-Digital", sans-serif;
+  }
+
+  #root > div:first-child {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0 0 20px #ff0000;
+  }
+
+  h1:first-child {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 6px #ff0000;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
+
+  input[type="text"] {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  li {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 60%;
+    display: flex;
+    font-family: "DS-Digital", sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  li input[type="checkbox"]:checked + label {
+    color: hsl(0, 53%, 22%);
+  }
+  .btn,
+  .btn-lg,
+  .btn-primary,
+  .btn-secondary,
+  .btn-danger {
+    width: 80%;
+    margin: 5px 0;
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+
+  /* For your + and - buttons only */
+  .btn-reps {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    padding: 0;
+    margin: 3px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  ul {
+    margin-top: 10px;
+  }
+
+  span,
+  label {
+    font-size: 1rem;
+  }
+}
